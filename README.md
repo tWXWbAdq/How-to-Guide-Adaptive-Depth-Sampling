@@ -78,10 +78,10 @@ Inference: Use the newly trained RGB2Q model in inference mode to generate Q map
 The steps of the proof of concept (POC) are summarized in the following table:
 ![picture](git_imgs/steps_poc.png)
 
-### Step 5 - Gaussian Sampling and coarse grid
+### Step 4 - Gaussian Sampling and coarse grid
 Use `ImpMaps2samp.py` to calculate sparse depth maps based on the newly generated Q maps.
 
-### Step 6 - Training the final reconstruction network
+### Step 5 - Training the final reconstruction network
 Train a depth reconstruction model (FusionNet) using RGB images and newly calculated importance-based patterns (DepthReconImp).
 
 ## Testing
